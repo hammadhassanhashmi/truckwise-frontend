@@ -1,0 +1,31 @@
+/*
+Template Name: TrukWise - Admin & Dashboard Template
+Author: HammadHassanHashmi
+Version: 2.4.0
+Website: https://HammadHassanHashmi.com/
+Contact: HammadHassanHashmi@gmail.com
+File: Custom Bootstrap Css File
+*/
+
+
+//Core files
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "variables";
+@import "variables-dark";
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+@import "components/reboot";
+@import "components/alerts";
+@import "components/backgrounds";
+@import "components/badge";
+@import "components/buttons";
+@import "components/breadcrumb";
+@import "components/carousel";
+@import "components/card";
+@import "components/dropdown";
+@import "components/nav";
+@import "components/table";
+@import "components/pagination";
+@import "components/progress";
+@import "components/shadow";

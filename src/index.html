@@ -1,0 +1,128 @@
+@@include("partials/main.html")
+
+    <head>
+
+        @@include("partials/title-meta.html", {"title": "Dashboard"})
+
+        <!-- plugin css -->
+        <link href="assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+
+        @@include("partials/head-css.html")
+
+    </head>
+
+    @@include("partials/body.html")
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+
+            @@include("partials/menu.html")
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+
+                <div class="page-content">
+                    <div class="container-fluid">
+
+                        @@include("partials/page-title.html", {"pagetitle": "Dashboard", "title": "Opportunities"})
+
+                        <div class="row">
+                            <div class="col-xl-4 col-md-6">
+                                <!-- card -->
+                                <div class="card card-h-100">
+                                    <!-- card body -->
+                                    <div class="card-body">
+                                        <div class="row align-items-center">
+                                            <div class="col-6">
+                                                <span class="text-muted mb-3 lh-1 d-block ">2014 GMC Savana Commercial Cutaway</span>
+                                                
+                                            </div>
+
+                                            <div class="col-6">
+                                                <img src="/src/assets/images/truck-icon.png" >
+                                            </div>
+                                        </div>
+                                        <div class="text-nowrap">
+                                            
+                                        </div>
+                                    </div><!-- end card body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+        
+                            <div class="col-xl-4 col-md-6">
+                                <!-- card -->
+                                <div class="card card-h-100">
+                                    <!-- card body -->
+                                    <div class="card-body">
+                                        <div class="row align-items-center">
+                                            <div class="col-6">
+                                                <span class="text-muted mb-3 lh-1 d-block ">2014 GMC Savana Commercial Cutaway</span>
+                                                
+                                            </div>
+
+                                            <div class="col-6">
+                                                <img src="/src/assets/images/truck-icon.png" >
+                                            </div>
+                                        </div>
+                                        <div class="text-nowrap">
+                                            
+                                        </div>
+                                    </div><!-- end card body -->
+                                </div><!-- end card -->
+                            </div><!-- end col-->
+        
+                            <div class="col-xl-4 col-md-6">
+                                <!-- card -->
+                                <div class="card card-h-100">
+                                    <!-- card body -->
+                                    <div class="card-body">
+                                        <div class="row align-items-center">
+                                            <div class="col-6">
+                                                <span class="text-muted mb-3 lh-1 d-block ">2014 GMC Savana Commercial Cutaway</span>
+                                                
+                                            </div>
+
+                                            <div class="col-6">
+                                                <img src="/src/assets/images/truck-icon.png" >
+                                            </div>
+                                        </div>
+                                        <div class="text-nowrap">
+                                            
+                                        </div>
+                                    </div><!-- end card body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                               
+                        </div><!-- end row-->
+
+                    </div>
+                    <!-- container-fluid -->
+                </div>
+                <!-- End Page-content -->
+
+
+                @@include("partials/footer.html")
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+        @@include("partials/vendor-scripts.html")
+
+        <!-- apexcharts -->
+        <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+
+        <!-- Plugins js-->
+        <script src="assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.min.js"></script>
+        <script src="assets/libs/admin-resources/jquery.vectormap/maps/jquery-jvectormap-world-mill-en.js"></script>
+        <!-- dashboard init -->
+        <script src="assets/js/pages/dashboard.init.js"></script>
+
+        <script src="assets/js/app.js"></script>
+
+    </body>
+
+</html>
