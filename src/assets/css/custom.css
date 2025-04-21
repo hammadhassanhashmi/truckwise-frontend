@@ -1,0 +1,22 @@
+.page-title-box h4{
+  font-size: 28px;
+  font-weight: 600;
+  color: black;
+}
+
+.page-title-box p{
+  font-size: 15px;
+  font-weight: 400;
+  color: #686868;
+}
+
+.side-bar{
+  background-color: #2865A3;
+}
+
+.profile-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+}
