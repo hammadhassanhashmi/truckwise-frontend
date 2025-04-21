@@ -1,5 +1,5 @@
 /*
-Template Name: TrukWise - Bootstrap 5 Admin & Dashboard Template
+Template Name: TruckWise - Bootstrap 5 Admin & Dashboard Template
 Author: HammadHassanHashmi
 Version: 2.4.0
 Website: https://HammadHassanHashmi.com/
@@ -12,7 +12,7 @@ File: Main Js File
 
     'use strict';
 
-    var language = localStorage.getItem('TrukWise-language');
+    var language = localStorage.getItem('TruckWise-language');
     // Default Language
     var default_lang = 'en';
 
@@ -29,8 +29,8 @@ File: Main Js File
             } else if (lang == 'ru') {
                 document.getElementById("header-lang-img").src = "assets/images/flags/russia.jpg";
             }
-            localStorage.setItem('TrukWise-language', lang);
-            language = localStorage.getItem('TrukWise-language');
+            localStorage.setItem('TruckWise-language', lang);
+            language = localStorage.getItem('TruckWise-language');
             getLanguage();
         }
     }
