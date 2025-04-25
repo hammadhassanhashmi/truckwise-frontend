@@ -1,0 +1,53 @@
+@@include("partials/main.html")
+
+    <head>
+
+        @@include("partials/title-meta.html", {"title": "Signup - Step 1"})
+
+        @@include("partials/head-css.html")
+
+    </head>
+
+    @@include("partials/body.html")
+        <div class="auth-page min-vh-100 d-flex align-items-center justify-content-center bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="auth-full-page-content d-flex flex-column p-sm-5 p-4 bg-white shadow form-box my-5">
+                      <div class="my-3">
+                        <a href="#" class="d-block auth-logo my-5">
+                            <img src="assets/images/tw-logo.png" alt="Truckwise">
+                        </a>
+                      </div>
+                      <div class="text-left">
+                        <h3 class="fw-bold">Signup</h3>
+                        <p class="text-muted small mt-2">What type of account are you signing up for?</p>
+                      </div>
+
+                      <div class="auth-content my-auto">
+                        <form class="mt-4 pt-2" action="#" method="post">
+                          <div class="mb-3">
+                            <div class="form-check account-option p-2">
+                              <input class="form-check-input" type="checkbox" value="" id="accountCustomer" checked>
+                              <label class="form-check-label ms-2 fw-bold text-primary" for="accountCustomer">
+                                Customer
+                              </label>
+                            </div>
+                          </div>
+                          <div class="mt-5">
+                            <button class="btn btn-primary w-100 text-uppercase fw-bold" type="submit">Proceed</button>
+                          </div>
+                        </form>
+                        <div class="mt-5 text-center">
+                          <p class="mb-0 text-black fw-bold">Don't have an account? <a href="#" class="text-primary text-uppercase fw-bold">Join Now</a></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include("partials/vendor-scripts.html")
+        <!-- password addon init -->
+    </body>
+
+</html>

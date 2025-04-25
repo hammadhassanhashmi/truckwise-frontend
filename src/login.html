@@ -1,0 +1,69 @@
+@@include("partials/main.html")
+
+    <head>
+
+        @@include("partials/title-meta.html", {"title": "Login"})
+
+        @@include("partials/head-css.html")
+
+    </head>
+
+    @@include("partials/body.html")
+        <div class="auth-page min-vh-100 d-flex align-items-center justify-content-center bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="auth-full-page-content d-flex flex-column p-sm-5 p-4 bg-white shadow form-box my-5">
+                        <div class="my-3">
+                            <a href="#" class="d-block auth-logo my-5">
+                                <img src="assets/images/tw-logo.png" alt="Truckwise">
+                            </a>
+                        </div>
+
+                        <div class="auth-content my-auto">
+                            <div class="">
+                                <h3 class="fw-bold mb-0">Welcome to Truckwise</h3>
+                                <p class="text-muted my-3">Welcome back! Enter your credentials to login</p>
+                            </div>
+
+                            <form class="mt-4 pt-2" action="#" method="post">
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Mohammed123@email.com">
+                                </div>
+
+                                <div class="mb-3">
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-grow-1">
+                                            <label for="password" class="form-label">Password</label>
+                                        </div>
+                                    </div>
+                                    <div class="input-group auth-pass-inputgroup">
+                                        <input type="password" class="form-control" id="password" name="password" placeholder="****************">
+                                        <button class="btn shadow-none eye-icon" type="button">
+                                            <i class="mdi mdi-eye-outline"></i>
+                                        </button>
+                                    </div>
+                                    <div class="text-end my-3">
+                                        <a href="#" class="fw-semibold text-uppercase text-black">Forgot password?</a>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <button class="btn btn-primary w-100 text-uppercase fw-bold" type="submit">Login</button>
+                                </div>
+                            </form>
+                            <div class="mt-5 text-center">
+                                <p class="mb-0 text-black fw-bold">Don't have an account? <a href="#" class="text-primary text-uppercase fw-bold">Join Now</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include("partials/vendor-scripts.html")
+        <!-- password addon init -->
+
+    </body>
+
+</html>
