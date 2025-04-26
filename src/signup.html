@@ -24,18 +24,104 @@
                       </div>
 
                       <div class="auth-content my-auto">
+                        <!-- Progress Stepper -->
+                        <div class="form-stepper mb-4">
+                          <div class="step"></div>
+                          <div class="step"></div>
+                          <div class="step"></div>
+                        </div>
                         <form class="mt-4 pt-2" action="#" method="post">
-                          <div class="mb-3">
-                            <div class="form-check account-option p-2">
-                              <input class="form-check-input" type="checkbox" value="" id="accountCustomer" checked>
-                              <label class="form-check-label ms-2 fw-bold text-primary" for="accountCustomer">
-                                Customer
-                              </label>
+                          <div data-step="1" class="form-step">
+                            <div class="mb-3">
+                              <div class="form-check account-option p-2">
+                                <input class="form-check-input" type="checkbox" value="" id="accountCustomer" checked>
+                                <label class="form-check-label ms-2 fw-bold text-primary" for="accountCustomer">
+                                  Customer
+                                </label>
+                              </div>
+                            </div>
+                            <div class="mt-5">
+                              <button class="btn btn-primary w-100 text-uppercase fw-bold" data-next>Proceed</button>
                             </div>
                           </div>
-                          <div class="mt-5">
-                            <button class="btn btn-primary w-100 text-uppercase fw-bold" type="submit">Proceed</button>
+
+                          <div data-step="2" class="form-step">
+                            <div class="mb-3">
+                              <h6>Emirates ID (Front)</h6>
+                              <div class="upload-card">
+                                <div class="text-center">
+                                  <input type="file" class="file-input frontUpload" id="frontUpload" accept=".jpg,.jpeg,.png,.pdf">
+                                  <label for="frontUpload" class="file-label"><i class="display-4 text-muted bx bx-file-blank"></i></label>
+                                  <div class="uploaded-file" id="frontFile">
+                                      <span class="file-name"></span>
+                                      <span class="remove-btn" onclick="clearFile('frontUpload')">Remove</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="upload-instructions text-end mb-0">Upload in JPEG, PNG or PDF file format</p>
+                            </div>
+                            <div class="mb-3">
+                              <h6>Emirates ID (Back)</h6>
+                              <div class="upload-card">
+                                <div class="text-center">
+                                  <input type="file" class="file-input backUpload" name="backUpload" id="backUpload" accept=".jpg,.jpeg,.png,.pdf">
+                                  <label for="backUpload" class="file-label"><i class="display-4 text-muted bx bx-file-blank"></i></label>
+                                  <div class="uploaded-file" id="backFile">
+                                      <span class="file-name"></span>
+                                      <span class="remove-btn" onclick="clearFile('backUpload')">Remove</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="upload-instructions text-end mb-0">Upload in JPEG, PNG or PDF file format</p>
+                            </div>
+                            <div class="mt-5">
+                              <button class="btn btn-primary w-100 text-uppercase fw-bold" data-next>NEXT</button>
+                            </div>
                           </div>
+
+                          <div data-step="3" class="form-step">
+                            <div class="mb-3">
+                              <label for="fullName" class="form-label">Full Name</label>
+                              <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Type Here">
+                            </div>
+
+                            <div class="mb-3">
+                              <label for="email" class="form-label">Email address</label>
+                              <input type="email" class="form-control" id="email" name="email" placeholder="Type Here">
+                            </div>
+
+                            <div class="mb-3">
+                              <label for="mobNo" class="form-label">Mobile Number</label>
+                              <input type="text" class="form-control" id="mobNo" name="mobNo" placeholder="Type Here">
+                            </div>
+
+                            <div class="mb-3">
+                              <div class="d-flex align-items-start">
+                                  <div class="flex-grow-1">
+                                      <label for="password" class="form-label">Password</label>
+                                  </div>
+                              </div>
+                              <div class="input-group auth-pass-inputgroup">
+                                  <input type="password" class="form-control" id="password" name="password" placeholder="****************">
+                              </div>
+                            </div>
+
+                            <div class="mb-3">
+                              <div class="d-flex align-items-start">
+                                <div class="flex-grow-1">
+                                  <label for="confirmPassword" class="form-label">Confirm Password</label>
+                                </div>
+                              </div>
+                              <div class="input-group auth-pass-inputgroup">
+                                  <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="****************">
+                              </div>
+                            </div>
+
+                            <div class="mt-5">
+                              <button class="btn btn-primary w-100 text-uppercase fw-bold" type="submit">NEXT</button>
+                            </div>
+                          </div>
+
                         </form>
                         <div class="mt-5 text-center">
                           <p class="mb-0 text-black fw-bold">Don't have an account? <a href="#" class="text-primary text-uppercase fw-bold">Join Now</a></p>

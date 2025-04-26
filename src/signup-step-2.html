@@ -1,0 +1,73 @@
+@@include("partials/main.html")
+
+    <head>
+
+        @@include("partials/title-meta.html", {"title": "Signup"})
+
+        @@include("partials/head-css.html")
+
+    </head>
+
+    @@include("partials/body.html")
+        <div class="auth-page min-vh-100 d-flex align-items-center justify-content-center bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="auth-full-page-content d-flex flex-column p-sm-5 p-4 bg-white shadow form-box my-5">
+                      <div class="text-center">
+                        <h3 class="fw-bold">Please upload your Emirates ID</h3>
+                        <p class="text-muted small mt-2">We need this information to keep our platform secure.</p>
+                      </div>
+
+                      <div class="auth-content my-auto">
+                          <!-- Progress Stepper -->
+                        <div class="form-stepper mb-4">
+                          <div class="step"></div>
+                          <div class="step "></div>
+                          <div class="step"></div>
+                          <div class="step"></div>
+                        </div>
+                          <form class="mt-4 pt-2" action="#" method="post">
+                            <div class="mb-3">
+                              <h6>Emirates ID (Front)</h6>
+                              <div class="upload-card">
+                                <div class="text-center">
+                                  <input type="file" class="file-input frontUpload" id="frontUpload" accept=".jpg,.jpeg,.png,.pdf">
+                                  <label for="frontUpload" class="file-label"><i class="display-4 text-muted bx bx-file-blank"></i></label>
+                                  <div class="uploaded-file" id="frontFile">
+                                      <span class="file-name"></span>
+                                      <span class="remove-btn" onclick="clearFile('frontUpload')">Remove</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="upload-instructions text-end mb-0">Upload in JPEG, PNG or PDF file format</p>
+                            </div>
+                            <div class="mb-3">
+                              <h6>Emirates ID (Back)</h6>
+                              <div class="upload-card">
+                                <div class="text-center">
+                                  <input type="file" class="file-input backUpload" name="backUpload" id="backUpload" accept=".jpg,.jpeg,.png,.pdf">
+                                  <label for="backUpload" class="file-label"><i class="display-4 text-muted bx bx-file-blank"></i></label>
+                                  <div class="uploaded-file" id="backFile">
+                                      <span class="file-name"></span>
+                                      <span class="remove-btn" onclick="clearFile('backUpload')">Remove</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="upload-instructions text-end mb-0">Upload in JPEG, PNG or PDF file format</p>
+                            </div>
+
+                            <div class="mt-5">
+                              <button class="btn btn-primary w-100 text-uppercase fw-bold" type="submit">NEXT</button>
+                            </div>
+                          </form>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include("partials/vendor-scripts.html")
+        <!-- password addon init -->
+    </body>
+
+</html>
