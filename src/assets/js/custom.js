@@ -165,3 +165,14 @@ function clearFile(inputId) {
   uploadDisplay.querySelector('.file-name').textContent = '';
   icon.classList.remove('file-selected');
 }
+
+$(document).ready(function(){
+    $('.vehicle-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false
+    });
+});
+

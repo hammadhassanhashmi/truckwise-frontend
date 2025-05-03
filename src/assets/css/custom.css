@@ -1,3 +1,7 @@
+.page-content{
+  background-color: #F4F4F4;
+}
+
 .page-title-box h4{
   font-size: 28px;
   font-weight: 600;
@@ -64,7 +68,6 @@
   border: 3px solid #1E5F9F;
 }
 
-
 .account-option .form-check-input {
   width: 20px;
   height: 20px;
@@ -109,9 +112,11 @@
   margin: 20px 0;
   transition: all 0.3s ease;
 }
+
 .upload-card:hover {
   background-color: #f8f9fa;
 }
+
 .file-input {
   position: absolute;
   opacity: 0;
@@ -123,6 +128,7 @@
   color: #1E5F9F;
   font-weight: 500;
 }
+
 .uploaded-file {
   display: none;
   align-items: center;
@@ -133,6 +139,7 @@
   margin-top: 10px;
   flex-direction: column;
 }
+
 .remove-btn {
   color: #1E5F9F;
   cursor: pointer;
@@ -141,6 +148,7 @@
   text-align: center;
   text-transform: capitalize;
 }
+
 .upload-instructions {
   font-size: 0.9rem;
   color: #6c757d;
@@ -158,16 +166,292 @@
   color: #1E5F9F !important;
 }
 
-
 .is-invalid {
-    border-color: #dc3545 !important;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
-    background-repeat: no-repeat;
-    background-position: right calc(0.375em + 0.1875rem) center;
-    background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+  border-color: #dc3545 !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
 
 .is-invalid:focus {
     border-color: #dc3545;
     box-shadow: 0 0 0 0.25rem rgba(220,53,69,.25);
+}
+
+/* Dashboard Page Cards Start */
+
+.loan-card {
+  border: none;
+  background-color: #ffffff;
+}
+
+.small-btn {
+  font-size: 0.85rem;
+  background-color: #e9eefc;
+  border: none;
+}
+
+.awaiting-box {
+  background-color: #f3f6fc;
+}
+
+.letter-spacing {
+  letter-spacing: 0.15em;
+}
+
+.loan-vehicle-card {
+  background-color: #fff;
+  border: none;
+}
+
+.small-btn {
+  font-size: 0.8rem;
+  background-color: #e9eefc;
+  border: none;
+}
+
+.license-plate {
+  background-color: #fff;
+  padding: 10px 20px;
+  min-width: 100px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Dashboard Page Cards End */
+
+
+/* Vehicle List Page Cards Start */
+
+.vehicle-card {
+  background-color: #fff;
+}
+
+.license-box {
+  border: 3px solid #000;
+  padding: 10px 15px;
+  min-width: 90px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+/* Position slick dots absolutely within the slider */
+.vehicle-slider .slick-dots {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  display: flex !important;
+  padding: 0;
+  margin: 0;
+}
+
+.vehicle-slider .slick-dots li {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #1E5F9F;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+  list-style: none;
+}
+
+.vehicle-slider .slick-dots li.slick-active {
+  opacity: 1;
+}
+
+.vehicle-slider .slick-dots li button {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+/* Vehicle List Page Cards End */
+
+
+
+.loan-parameters {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin: .5rem auto;
+  background: #FFFFFF;
+  border: 1px solid #E8E8E8;
+  border-radius: 10px;
+}
+
+inner-container{
+  border: 11px solid #E8E8E8;
+}
+
+.loan-parameters h6 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  color: #000000;
+  text-align: center;
+  margin-top: -5px;
+}
+
+.depreciation-percent {
+  color: #dc3545;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+
+/* Loan Parameters */
+
+
+.slick-prev:before, .slick-next:before {
+  color: #1E5F9F !important;
+}
+
+.chart-slider .slick-slide {
+  padding: 20px;
+  text-align: center;
+}
+
+.depreciation-bar {
+  height: 200px;
+  width: 30px;
+  background: #e9ecef;
+  margin: 0 auto;
+  position: relative;
+}
+
+.depreciation-fill {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #1E5F9F;
+  transition: all 0.3s ease;
+}
+
+.depreciation-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  padding: 2rem;
+  margin: .5rem auto;
+  max-width: 800px;
+}
+
+.depreciation-header {
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.depreciation-header h1{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 110%;
+  color: #000000;
+  text-align: center;
+}
+
+.depreciation-header p{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+}
+
+.month-entry {
+  background: #f8f9fa;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #E8E8E8;
+  border-radius: 8px;
+}
+
+.month-entry h5{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: capitalize;
+  color: #15171B;
+}
+
+.balance-value {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  color: #000000;
+}
+
+.percentage-badge {
+  color: #E34444;
+  padding: 0.25rem 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.depreciation-amount {
+  color: #E34444;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+
+.vehicle-documents {
+  padding: 20px;
+  border-radius: 10px;
+  background: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.vehicle-documents h3 {
+  margin-bottom: 20px;
+  font-size: 1.25rem;
+}
+
+.documents-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 15px;
+}
+
+.doc-card {
+  background: #f0f4fa;
+  border-radius: 8px;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.doc-info {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.doc-icon {
+  width: 40px;
+  height: 48px;
+}
+
+.doc-text p {
+  margin: 4px 0;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.doc-date {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.download-btn {
+  font-size: 1.2rem;
+  color: #0056d2;
+  text-decoration: none;
 }
