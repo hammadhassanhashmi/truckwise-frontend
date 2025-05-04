@@ -188,7 +188,7 @@
 
 .small-btn {
   font-size: 0.85rem;
-  background-color: #e9eefc;
+  background-color: #E6EBF5;
   border: none;
 }
 
@@ -636,6 +636,10 @@ inner-container{
   background: #e7e7e7;
 }
 
+.auth-full-page-content{
+  min-height: 80vh;
+}
+
 .btn-primary {
   background-color: #1E5F9F;
   border-color: #1E5F9F;
@@ -647,4 +651,21 @@ inner-container{
   background-color: #174c7f;
   border-color: #174c7f;
   color: #fff;
+}
+
+
+.bg-success{
+  background-color:#6ACA48;
+}
+
+.unavailable{
+  background-color:#FFB546 !important;
+}
+
+.badge{
+  border-radius: 40px;
+}
+
+.btn-sm{
+  border-radius: 10px;
 }
