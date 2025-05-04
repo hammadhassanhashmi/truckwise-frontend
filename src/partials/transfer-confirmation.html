@@ -1,0 +1,65 @@
+<div class="auth-page min-vh-100 d-flex align-items-center justify-content-center bg-light">
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="auth-full-page-content d-flex flex-column p-sm-5 p-4 bg-white shadow form-box my-5">
+            <div class="text-center">
+              <h3 class="fw-bold">Please provide proof of transfer for your investment </h3>
+              <p class="text-muted small mt-2">This ensures that the loan process remains transparent and documented. It also starts the countdown to the first returns on your investment .</p>
+            </div>
+
+            <div class="auth-content my-auto">
+              <!-- Progress Stepper -->
+              <div class="form-stepper mb-4">
+                <div class="step"></div>
+                <div class="step"></div>
+                <div class="step"></div>
+              </div>
+              <form class="mt-4 pt-2" action="#" method="post">
+                <div data-step="1" class="form-step">
+                  <div class="mb-3">
+                    <h6>Upload Proof of Transfer</h6>
+                    <div class="upload-card">
+                      <div class="text-center">
+                        <input type="file" class="file-input frontUpload" id="frontUpload" accept=".jpg,.jpeg,.png,.pdf">
+                        <label for="frontUpload" class="file-label"><i class="display-4 text-muted bx bx-file-blank"></i></label>
+                        <div class="uploaded-file" id="frontFile">
+                            <span class="file-name"></span>
+                            <span class="remove-btn" onclick="clearFile('frontUpload')">Remove</span>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="upload-instructions text-end mb-0">Upload in PDF file format</p>
+                  </div>
+                  
+                  <div class="mt-5">
+                    <button class="btn btn-primary w-100 text-uppercase fw-bold" data-next>Submit</button>
+                  </div>
+                </div>
+                <div data-step="2" class="form-step">
+                  <div class="mb-3">
+                    <h6>Upload Proof of Transfer</h6>
+                    <div class="upload-card">
+                      <div class="text-center">
+                        <input type="file" class="file-input frontUpload" id="frontUpload" accept=".jpg,.jpeg,.png,.pdf">
+                        <label for="frontUpload" class="file-label"><i class="display-4 text-muted bx bx-file-blank"></i></label>
+                        <div class="uploaded-file" id="frontFile">
+                            <span class="file-name"></span>
+                            <span class="remove-btn" onclick="clearFile('frontUpload')">Remove</span>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="upload-instructions text-end mb-0">Upload in PDF file format</p>
+                  </div>
+                  
+                  <div class="mt-5">
+                    <button class="btn btn-primary w-100 text-uppercase fw-bold" data-next>Submit</button>
+                  </div>
+                </div>
+
+              </form>
+              
+            </div>
+          </div>
+      </div>
+  </div>
+</div>

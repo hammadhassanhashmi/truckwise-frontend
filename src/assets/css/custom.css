@@ -335,7 +335,6 @@ inner-container{
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
   padding: 2rem;
   margin: .5rem auto;
-  max-width: 800px;
 }
 
 .depreciation-header {
@@ -454,4 +453,198 @@ inner-container{
   font-size: 1.2rem;
   color: #0056d2;
   text-decoration: none;
+}
+
+.example-val:before{
+  content: "AED: ";
+}
+
+.noUi-connect{
+  background:#60D44D;
+}
+
+.noUi-active{
+  background:#30BB1A;
+}
+
+.notification-wrapper {
+  background-color: #f9fafa;
+}
+
+.notification-card {
+  display: flex;
+  align-items: start;
+  background: #fff;
+  border: 1px solid #e3e7ec;
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  position: relative;
+  transition: background 0.3s ease;
+}
+
+.notification-card.unread {
+  background-color: #edf4ff;
+}
+
+.notification-card .icon-section {
+  margin-right: 12px;
+  font-size: 24px;
+  color: #5087ff;
+  background: #F3F6FA;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notification-card .content-section {
+  flex: 1;
+}
+
+.notification-card .type {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15px;
+  color: #1E5F9F;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+
+}
+
+.notification-card .message {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1A1A1A;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.notification-card .date {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 2px;
+  color: #1A1A1A;
+}
+
+.notification-card.unread::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #1E5F9F;
+  border-radius: 50%;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+
+.pagination {
+  font-size: 14px;
+}
+
+
+
+.loan-contract .border-box {
+  border-radius: 8px;
+  background-color: #f2f5fa;
+  max-height: 250px; /* Adjust if needed */
+  overflow-y: auto;
+  padding-right: 1rem;
+  scrollbar-width: thin;           /* Firefox support */
+  scrollbar-color: #C5DCE4 white;  /* Firefox thumb and track */
+}
+
+.loan-contract .border-box::-webkit-scrollbar {
+  width: 6px;
+}
+
+.loan-contract .border-box::-webkit-scrollbar-thumb {
+  background-color: #C5DCE4;
+  border-radius: 10px;
+}
+
+.loan-contract .border-box::-webkit-scrollbar-thumb {
+  background-color: #C5DCE4;
+  border-radius: 10px;
+}
+
+.loan-contract .border-box::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+.loan-contract .section-title {
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  color: #1a1a1a;
+}
+
+.loan-contract .download-box {
+  background-color: #f1f8ff;
+  border: 1px solid #d0e4ff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.loan-contract a {
+  color: #1E5F9F;
+  text-decoration: none;
+}
+
+.loan-contract a:hover {
+  text-decoration: underline;
+}
+
+.loan-contract .form-check-input:checked {
+  background-color: #1E5F9F;
+  border-color: #1E5F9F;
+}
+
+
+.submission-wrapper {
+  align-items: center;
+  background-color: #f5f5f5; /* Optional light background */
+}
+
+.submission-card {
+  background: white;
+  border-radius: 12px;
+  width: 440px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.success-icon img {
+  margin-top: -7rem;
+  background: white;
+  border-radius: 50%;
+}
+.app-search .form-control{
+  background-color:#e7e7e7;
+}
+
+.app-search .btn {
+  position: absolute;
+  right:unset;
+  left: -20px;
+  top: 0px;
+  height: 40px;
+  background: #e7e7e7;
+}
+
+.btn-primary {
+  background-color: #1E5F9F;
+  border-color: #1E5F9F;
+  color: #fff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #174c7f;
+  border-color: #174c7f;
+  color: #fff;
 }
